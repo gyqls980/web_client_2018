@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="doggy.js"></script>
+	<title>Hyobin's FORDOG</title>
+	<link rel="stylesheet" type="text/css" href="20171726_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+
+</head>	
+<body>
+	<img src="FORDOG1.png" width="750" height="130" alt="웹 이름" id="title" >
+	<div style="position: relative;">
+		<input type="button" value="JOIN US :)" id="button" onclick="joinpop()">
+	</div>
+
+	
+	
+	
+	<div id="Menubar">
+		<ul>
+			<li><a class="menuLink" href="about_dog.html">About Dog</a></li>
+			<li><a class="menuLink" href="market.html">Market</a></li>
+			<li><a class="menuLink" href="lovedogs.html">LOVE Dogs</a></li>
+			<li><a class="menuLink" href="q_a.html">Q&#32;&#38;&#32;A</a></li>
+		</ul>
+	</div>	
+	<script>
+		var idx=0;
+		window.onload = function(){
+			showSlide();
+		}
+
+		function showSlide(){
+			var i;
+			var x = document.getElementsByClassName("slide1");
+
+			for(i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			idx++;
+			if(idx > x.length){
+				idx = 1;
+			}
+			x[idx-1].style.display = "block";
+			setTimeout(showSlide, 2000);
+		}
+	</script>
+	<div >
+		<img src="mainimage.png" width="1190" height="600" alt="메인이미지" id="main" class="slide1">
+		<img src="momo2.png" width="1190" height="600" alt="메인이미지" id="main" class="slide1">
+		<img src="momo3.png" width="1190" height="600" alt="메인이미지" id="main" class="slide1">
+		<img src="momo.png" width="1190" height="600" alt="메인이미지" id="main" class="slide1">
+	</div>
+	<div> 
+		<details>
+			<summary id="summary">information</summary>
+			<p id="summary_hide">FOR DOG는 애견인들을 위한 웹 페이지입니다. <br> About Dog에서는 강아지에 대한 정보를 제공합니다.<br>또한 다양한 애견 용품들을 둘러볼 수 있는 Market이 있습니다.<br>LOVE DOGS 상단 메뉴를 통해 다양한 사랑스러운 강아지들을 만나보세요! :&#32;)<br>이외에 궁금증이 있으시다면 Q&#32;&#38;&#32;A를 통해 질문을 해주시길 바랍니다.
+			</p>
+		</details>
+
+	</div>
+	
+	
+
+
+</body>
