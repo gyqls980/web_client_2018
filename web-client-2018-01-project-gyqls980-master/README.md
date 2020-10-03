@@ -1,6 +1,9 @@
 ### Project description
 A web-client computing course project
 
+### Project Link
+https://leeky-courses.github.io/web-client-2018-01-project-gyqls980/ghkdgyqls-qlalfrudfh/
+
 #### Rules and Expetations
 * Having hands-on experience of using HTML and CSS
 * No out-of-box tool use (홈페이지 만들어주는 툴 사용금지)
